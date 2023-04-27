@@ -1,0 +1,27 @@
+@import '../../../styles/_variaveis.scss';
+
+.footerContainer {
+  height: 195px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px auto;
+  .social {
+    .icon {
+      cursor: pointer;
+    }
+    .icon:not(:last-child) {
+      margin-right: 28px;
+    }
+  }
+
+  p {
+    font-family: $font-Roboto;
+    margin-top: 16px;
+    font-size: 24px;
+    line-height: 36px;
+    color: $c9;
+  }
+}

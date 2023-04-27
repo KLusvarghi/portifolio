@@ -1,0 +1,55 @@
+@import '../../../../styles/_variaveis.scss';
+
+.projeto {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  background: $c1;
+  padding: 16px 20px;
+  border-radius: 5px;
+
+  .title {
+    font-family: $font-Roboto;
+    font-size: 24px;
+    line-height: 36px;
+    color: $c10;
+    margin-top: 8px;
+  }
+
+  p {
+    font-family: $font-Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    color: $c9;
+    margin-top: 12px;
+  }
+
+  .tecnologias {
+    margin-top: 8px;
+    display: flex;
+    gap: 12px;
+    color: $c10;
+    font-size: 18px;
+  }
+
+  .buttons {
+    margin-top: 40px;
+
+    a {
+      display: inline-block;
+      color: $c1;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 24px;
+      font-family: $font-Poppins;
+      padding: 6px 32px;
+      background: linear-gradient(to right, $start-light 0%, $end-light 100%);
+      border-radius: 5px;
+
+      &:first-child {
+        margin-right: 40px;
+      }
+    }
+  }
+}

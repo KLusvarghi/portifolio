@@ -1,0 +1,143 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 12px 0;
+  box-sizing: border-box;
+  background: #61b4e7;
+  height: 50px;
+
+  position: fixed;
+}
+
+header a {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'Poppins';
+  font-weight: 600;
+  color: #f4f5f6;
+  text-decoration: none;
+}
+
+header button {
+  display: none;
+  border: none;
+  background-color: transparent;
+  color: #f4f5f6;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: 'Poppins';
+
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  /* // flex-wrap: wrap; */
+  gap: 36px;
+}
+nav ul li {
+  display: block;
+  padding: 0.5rem;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: 'Poppins';
+  text-decoration: none;
+  cursor: pointer;
+  color: #f4f5f6;
+}
+
+.headerContainer nav ul li::before {
+  content: '';
+  background: #f4f5f6;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+}
+
+/* // .menuToggle {
+  //   cursor: pointer;
+  //   display: none;
+  //   span {
+  //     display: block;
+  //     width: 1.9rem;
+  //     height: 2px;
+  //     margin: 4px;
+  //     background: #F4F5F62;
+  //   }
+  // } */
+
+@media (max-width: 1262px) {
+  header {
+    border-bottom: 2px solid rgba(0, 0, 0, .05);
+
+  }
+
+  nav button {
+    display: flex;
+  }
+
+  button #hamburger {
+    width: 20px;
+    border-top: 2px solid;
+  }
+
+  button #hamburger::after, #hamburger::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: currentColor;
+    margin-top: 5px ;
+    transition: .3s;
+    position: relative;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    gap: 5px;
+
+    overflow-y: hidden;
+    visibility: hidden;
+
+    height: 0;
+    width: 100%;
+    top: 50px;
+    right: 0;
+    z-index: 1000;
+    /* padding: 24px 12px; */
+    transition: .6s;
+    background: rgba(97, 180, 231, 95%);
+  }
+  
+  nav ul li {
+    font-size: 22px;
+  }
+
+  .active ul {
+    visibility: visible;
+    height: calc(380px - 50px);
+  }
+
+  .active #hamburger {
+    border-top-color: transparent ;
+  }
+
+  .active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  .active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}

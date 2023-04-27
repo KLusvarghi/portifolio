@@ -1,0 +1,125 @@
+@import '../../../styles/_variaveis.scss';
+
+.contatoContainer {
+  width: 100%;
+  background: $b1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 112px 220px 120px 220px;
+
+  h1 {
+    font-family: $font-Poppins;
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 500;
+    color: $c2;
+  }
+
+  p {
+    font-family: $font-Roboto;
+    margin-top: 16px;
+    font-size: 24px;
+    line-height: 36px;
+    color: $c3;
+  }
+
+  .informatios {
+    display: flex;
+    flex-direction: row;
+    gap: 238px;
+    margin-top: 60px;
+
+    .info {
+      .wrapper {
+        display: flex;
+        margin-top: 38px;
+        gap: 12px;
+        // flex-direction: column;
+        h3 {
+          font-family: $font-Roboto;
+          font-size: 24px;
+          line-height: 16px;
+          color: $c1;
+        }
+
+        p {
+          margin-top: 8px;
+          font-family: $font-Roboto;
+          font-size: 20px;
+          line-height: 14px;
+          color: $c1;
+        }
+      }
+    }
+
+    .contact {
+      display: grid;
+      grid-template:
+        'nome email'
+        'subject subject'
+        'mensagem mensagem'
+        'mensagem mensagem';
+      column-gap: 33px;
+      row-gap: 16px;
+
+      .nome,
+      .email,
+      .subject,
+      .mensagem {
+        font-family: $font-Roboto;
+        font-size: 18px;
+        line-height: 24px;
+        border-radius: 4px;
+        border: 1px solid $icon;
+        background-color: $icon;
+        box-sizing: border-box;
+        padding: 16px;
+      }
+
+      .nome:focus,
+      .email:focus,
+      .subject:focus,
+      .mensagem:focus{
+        border: 1px solid $icon;
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+        color: $c0;
+      }
+
+      button {
+        height: 50px;
+        width: 234px;
+        background: transparent;
+        border: 3px solid $icon;
+        border-radius: 4px;
+
+        color: $c0;
+        font-size: 18px;
+        line-height: 24px;
+        font-family: $font-Roboto;
+        cursor: pointer;
+      }
+    }
+
+    .nome {
+      grid-area: nome;
+      height: 70px;
+      width: 295px;
+    }
+    .email {
+      grid-area: email;
+      height: 70px;
+      width: 295px;
+    }
+    .subject {
+      grid-area: subject;
+      height: 70px;
+    }
+    .mensagem {
+      grid-area: mensagem;
+    }
+  }
+}

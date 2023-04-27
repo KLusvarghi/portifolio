@@ -1,0 +1,101 @@
+@import '../../../styles/_variaveis.scss';
+
+.skillsContainer {
+  height: 560px;
+  width: 100%;
+  background-color: $c1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 112px;
+  padding-bottom: 120px;
+
+
+  h1 {
+    font-family: $font-Poppins;
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 600;
+    color: $c9;
+  }
+
+  p {
+    font-family: $font-Roboto;
+    font-size: 24px;
+    line-height: 36px;
+    color: $c7;
+    margin-top: 16px;
+    margin-bottom: 96px;
+  }
+
+  .skills {
+    // width: 920px;
+    height: 200px;
+    display: flex;
+    gap: 88px;
+    // overflow-x: scroll;
+
+    .tecnologia {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 112px;
+      // height: 500px;
+
+      p {
+        font-family: $font-Roboto;
+        font-size: 24px;
+        line-height: 36px;
+        color: $c10;
+        margin-bottom: 16px;
+        font-weight: 400;
+      }
+
+      .image {
+        display: block;
+        width: 80px;
+        height: 80px;
+      }
+
+      .js {
+        background: url($js) no-repeat;
+      }
+      .css {
+        background: url($css) no-repeat;
+      }
+      .html {
+        background: url($html) no-repeat;
+      }
+      .type {
+        background: url($type) no-repeat;
+      }
+      .react {
+        background: url($react) no-repeat;
+      }
+      .git {
+        background: url($git) no-repeat;
+      }
+      .sass {
+        background: url($sass) no-repeat;
+      }
+      .styled {
+        background: url($styled) no-repeat;
+      }
+
+      .progressContainer {
+        margin-top: 16px;
+        background: $c10;
+        height: 5px;
+        width: 100%;
+        border-radius: 5px;
+
+        span {
+          display: block;
+          height: 5px;
+          border-radius: 5px;
+          border: 1px solid $c10;
+        }
+      }
+    }
+  }
+}

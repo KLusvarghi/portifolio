@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Javascript",
+    "class": "js",
+    "color": "F7DF1E",
+    "size": "69%"
+  },
+  {
+    "title": "CSS",
+    "class": "css",
+    "color": "1572B6",
+    "size": "80%"
+  },
+  {
+    "title": "Html5",
+    "class": "html",
+    "color": "F1662A",
+    "size": "94%"
+  },
+  {
+    "title": "Typescript",
+    "class": "type",
+    "color": "3178C6",
+    "size": "56%"
+  },
+  {
+    "title": "React",
+    "class": "react",
+    "color": "00D8FF",
+    "size": "68%"
+  },
+  {
+    "title": "Git",
+    "class": "git",
+    "color": "F1662A",
+    "size": "77%"
+  },
+  {
+    "title": "SASS",
+    "class": "sass",
+    "color": "CD6799",
+    "size": "76%"
+  },
+  {
+    "title": "Component",
+    "class": "styled",
+    "color": "FF87AF",
+    "size": "56%"
+  }
+]

@@ -1,0 +1,110 @@
+@import '../../../styles/_variaveis.scss';
+
+.AboutMeContainer {
+  // height: 668px;
+  width: 100%;
+  display: flex;
+  column-gap: 104px;
+  justify-content: center;
+  // align-items: center;
+  padding: 112px 167px 120px 167px;
+
+
+  .me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .myname{
+      margin-top: 32px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      
+      p {
+        display: block;
+        font-family: $font-Poppins;
+        font-size: 32px;
+        line-height: 40px;
+        color: $c9;
+        font-weight: 500;
+        
+      }
+    }
+
+    a {
+      display: inline-block;
+      color: $c2;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 24px;
+      font-family: $font-Poppins;
+      padding: 16px 32px;
+      background: linear-gradient(to right, $start-light 0%, $end-light 100%);
+      border-radius: 5px;
+      margin-top: 20px;
+      transition: ease-in-out 0.3s;
+
+      &:hover {
+        box-shadow:  inset 300px 0 0 0 $end-light;
+      } 
+    }
+  }
+
+  .aboutMe {
+    max-width: 760px;
+
+    h1 {
+      font-family: $font-Poppins;
+      font-size: 48px;
+      line-height: 56px;
+      font-weight: 600;
+      color: $c9;
+    }
+    
+    .location {
+      margin-top: 60px;
+      font-family: $font-Roboto;
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 500;
+      color: $c7;
+    }
+
+    p {
+      margin-top: 12px;
+      font-family: $font-Roboto;
+      font-size: 24px;
+      line-height: 36px;
+      color: $c6;
+    }
+
+    .experince {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+
+      .studing{
+        margin-right: 8px;
+      }
+      .studing, .projects {
+        p {
+          font-family: $font-Roboto;
+          font-size: 14px;
+          line-height: 20px;
+          color: $c8;
+          .destaque {
+            font-family: $font-Poppins;
+            font-size: 16px;
+            line-height: 24px;
+            color: $c10;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
