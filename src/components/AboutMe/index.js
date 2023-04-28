@@ -7,17 +7,17 @@ const AboutMe = () => {
   const numRef = useRef();
 
   useLayoutEffect(() => {
-    const numero = +numRef.current.getAttribute('dataTarget');
-    const incremento = Math.floor(numero / 26); 
+    const numero = +numRef.current.getAttribute('data-target');
+    const incremento = Math.floor(numero / 26);
     let start = 0;
     const timer = setInterval(() => {
       start += incremento;
-      numRef.current.innerText = start; 
+      numRef.current.innerText = start;
       if (start > numero) {
-        numRef.current.innerText = numero; 
-        clearInterval(timer); 
+        numRef.current.innerText = numero;
+        clearInterval(timer);
       }
-    }, 25 * Math.random()); 
+    }, 25 * Math.random());
   });
 
   return (
@@ -29,7 +29,13 @@ const AboutMe = () => {
           <p>Ortolani&nbsp;</p>
           <p>Lusvarghi</p>
         </div>
-        <a href="#">Open CV on drive</a>
+        <a
+          href="https://drive.google.com/file/d/1JqlBJ_Cii_5jY0lX8k220gVkpb9zRn3d/view?usp=sharing"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Open CV on drive
+        </a>
       </div>
       <div className={styles.aboutMe}>
         <h1>Sobre mim</h1>
@@ -51,7 +57,7 @@ const AboutMe = () => {
           </div>
           <div className={styles.projects}>
             <p>
-              <span className={styles.destaque} ref={numRef} dataTarget="26">
+              <span className={styles.destaque} ref={numRef} data-target="26">
                 +
               </span>{' '}
               <br />

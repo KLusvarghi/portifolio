@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState } from 'react';
 import styles from './header.module.scss';
 import classNames from 'classnames';
@@ -21,11 +22,11 @@ const Header = () => {
           <span className={styles.hamburger}></span>
         </button>
         <ul id="menu" className={styles.menu}>
-          <li>Home</li>
-          <li>Sobre mim</li>
-          <li>Skills</li>
-          <li>Projetos</li>
-          <li>Contato</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre mim</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Projetos</a></li>
+          <li><a href="#">Contato</a></li>
         </ul>
       </nav>
     </header>
