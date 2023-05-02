@@ -31,6 +31,8 @@
     margin-top: 60px;
 
     .info {
+      // width: 300px;
+      
       .wrapper {
         display: flex;
         margin-top: 38px;
@@ -38,15 +40,15 @@
         // flex-direction: column;
         h3 {
           font-family: $font-Roboto;
-          font-size: 24px;
-          line-height: 16px;
+          font-size: 18px;
+          line-height: 20px;
           color: $c1;
         }
 
         p {
           margin-top: 8px;
           font-family: $font-Roboto;
-          font-size: 20px;
+          font-size: 18px;
           line-height: 14px;
           color: $c1;
         }

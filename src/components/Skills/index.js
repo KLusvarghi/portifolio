@@ -31,8 +31,8 @@ const Skills = () => {
   useEffect(() => {
     lis.map((icon) =>
       icon.addEventListener('click', () => {
-        console.log(icon.id);
-        console.log(ulRef.current.scrollLeft);
+        // console.log(icon.id);
+        // console.log(ulRef.current.scrollLeft);
         // if clicked icon is left, reduce 350 from tabsBox scrollLeft else add
         let scrollWidth = (ulRef.current.scrollLeft +=
           icon.id === 'left' ? -340 : 340);
