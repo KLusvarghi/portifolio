@@ -8,26 +8,29 @@ import { MdEmail } from 'react-icons/md';
 import { FaFacebookSquare } from 'react-icons/fa';
 
 const Footer = () => {
+
+  const sizeIcon = 35;
+
   return (
     <section className={styles.footerContainer}>
       <div className={styles.social}>
         <span className={styles.icon}>
-          <MdEmail size={50} />
+          <MdEmail size={sizeIcon} />
         </span>
         <span className={styles.icon}>
-          <AiFillLinkedin size={50} />
+          <AiFillLinkedin size={sizeIcon} />
         </span>
         <span className={styles.icon}>
-          <VscGithub size={50} />
+          <VscGithub size={sizeIcon} />
         </span>
         <span className={styles.icon}>
-          <FaFacebookSquare size={50} />
+          <FaFacebookSquare size={sizeIcon} />
         </span>
         <span className={styles.icon}>
-          <AiFillInstagram size={50} />
+          <AiFillInstagram size={sizeIcon} />
         </span>
         <span className={styles.icon}>
-          <FaTelegramPlane size={50} />
+          <FaTelegramPlane size={sizeIcon} />
         </span>
       </div>
       <p>Alguns direitos reservados ©</p>

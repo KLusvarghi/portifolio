@@ -20,6 +20,11 @@
     font-weight: 600;
     color: $c1;
     text-decoration: none;
+    transition: .5s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   nav {

@@ -29,7 +29,7 @@ const Home = () => {
           <TypeAnimation
             sequence={[
               'Olá, eu sou Kauã Lusvarghi',
-              1000,
+              450,
               () => setActive(true),
             ]}
             wrapper="h1"

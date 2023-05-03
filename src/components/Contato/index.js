@@ -12,12 +12,9 @@ const Contato = () => {
   const [message, setMessage] = useState('');
 
   const [error, setError] = useState(false);
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
-  // console.log(name)
-  // console.log(email)
-  // console.log(subject)
-  // console.log(mensagem)
+
 
   function sedEmail(e) {
     e.preventDefault();
@@ -64,7 +61,7 @@ const Contato = () => {
             <HiLocationMarker size={38} color="#093B5A" />
             <div>
               <h3>Localização</h3>
-              <p>Praia Grande - Litoral Sul - SP</p>
+              <p>Praia Grande - SP</p>
             </div>
           </div>
 

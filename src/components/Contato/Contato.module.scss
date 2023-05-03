@@ -6,7 +6,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 112px 220px 120px 220px;
+  padding: 112px 167px 120px 167px;
+
 
   h1 {
     font-family: $font-Poppins;
@@ -31,12 +32,13 @@
     margin-top: 60px;
 
     .info {
-      // width: 300px;
       
       .wrapper {
         display: flex;
         margin-top: 38px;
         gap: 12px;
+        padding: 5px;
+
         // flex-direction: column;
         h3 {
           font-family: $font-Roboto;
@@ -80,12 +82,15 @@
         padding: 16px;
       }
 
-      .nome:focus,
-      .email:focus,
-      .subject:focus,
-      .mensagem:focus{
-        border: 1px solid $icon;
+      .nome {
+        &:focus {
+
+          border: none;
+          box-shadow: none;
+        }
       }
+
+      
 
       input::placeholder,
       textarea::placeholder {
@@ -109,17 +114,17 @@
 
     .nome {
       grid-area: nome;
-      height: 70px;
-      width: 295px;
+      height: 62px;
+      width: 266px;
     }
     .email {
       grid-area: email;
-      height: 70px;
-      width: 295px;
+      height: 62px;
+      width: 266px;
     }
     .subject {
       grid-area: subject;
-      height: 70px;
+      height: 62px;
     }
     .mensagem {
       grid-area: mensagem;
